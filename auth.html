@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>授权工厂查询 - 大雪杉板材</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html"><img src="assets/daxueshan-logo.jpg" alt="大雪杉品牌LOGO"><span><strong>大雪杉</strong>官方授权查询平台</span></a>
+        <div class="nav-links">
+          <a href="index.html">首页</a><a class="active" href="auth.html">授权查询</a><a href="products.html">产品中心</a><a href="about.html">公司介绍</a><a href="contact.html">联系我们</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">官方授权核验</p>
+          <h1>授权工厂查询</h1>
+          <p>支持工厂名称、授权编号、手机号后四位与地区筛选。二维码查询可在后续接入证书链接后开放。</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container query-page">
+          <div class="query-panel">
+            <form data-query-form data-result-target="#queryResult">
+              <div class="form-grid">
+                <label class="full">工厂名称或授权编号<input name="keyword" placeholder="例如：XX家具厂 / DXS-2026-0001"></label>
+                <label>手机号后四位<input name="phoneLast4" maxlength="4" placeholder="例如：6688"></label>
+                <label>授权地区<select name="region"><option value="">全部地区</option><option>广东省</option><option>浙江省</option></select></label>
+                <div class="full"><button class="button primary" type="submit">查询授权信息</button></div>
+              </div>
+            </form>
+            <div id="queryResult" class="result">
+              <h3>请输入查询信息</h3>
+              <p>演示数据可输入：DXS-2026-0001、DXS-2026-0002、XX家具厂。</p>
+            </div>
+          </div>
+          <aside class="grid">
+            <article class="card pad"><h3>查询方式</h3><p>工厂名称、授权编号、手机号后四位、地区筛选。</p></article>
+            <article class="card pad"><h3>官方提示</h3><p>暂未查询到授权信息时，请先核对名称或编号，再联系大雪杉官方客服确认。</p></article>
+            <article class="card pad"><h3>二维码查询</h3><p>后续可把授权证书二维码绑定到独立结果页，扫码直达核验结果。</p></article>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="container"><span>© 2026 大雪杉板材</span><span>授权查询结果以官方平台为准</span></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
